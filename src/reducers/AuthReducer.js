@@ -6,7 +6,7 @@ import {
     LOGIN_USER 
 } from '../actions/types';
 
-const INITIAL_STATE = { email: '', password: '', user: null, error: '', loading: false };
+const INITIAL_STATE = { email: 'ajkhatibi@gmail.com', password: 'akbar1!2', user: null, error: '', loading: false };
 
 export default (state = INITIAL_STATE, action) => {
     console.log('actions from reducer.js: ', action);
