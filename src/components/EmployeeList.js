@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { employeeFetch } from '../actions';
 import { View, Text } from 'react-native';
 
 class EmployeeList extends Component {
+    componentWillMount() {
+        this.props.employeeFetch()
+    }
     render(){
         return (
             <View>
@@ -13,5 +18,5 @@ class EmployeeList extends Component {
     }
 }
 
-export default EmployeeList; 
+export default connect(null, {employeeFetch})(EmployeeList); 
 
