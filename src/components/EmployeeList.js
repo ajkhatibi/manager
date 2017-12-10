@@ -2,7 +2,8 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { employeeFetch } from '../actions';
-import { View, Text, ListView } from 'react-native';
+import { ListView, Text, FlatList  } from 'react-native';
+import ListItem from './ListItem';
 
 class EmployeeList extends Component {
     componentWillMount() {
@@ -21,11 +22,11 @@ class EmployeeList extends Component {
     render(){
         console.log('logging render method', this.props);
         return (
-            <View>
-                <Text>
-                    hello
-                </Text>
-            </View>
+                <FlatList
+                    data={this.props.employeesArray}
+                    renderItem={({item}) => <ListItem employee={item} row={item.name}/>}
+                />
+
         );
     }
 }

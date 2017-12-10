@@ -24,6 +24,7 @@ class EmployeeCreate extends Component {
         console.log('on change shift: ', this.props.employeeUpdate({ prop: 'shift', value}))
     }
     render() {
+        console.log('after clicking on employee: ', this.props.employee);
         return (
             <Card>
                 <CardSection>
