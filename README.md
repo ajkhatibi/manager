@@ -1,5 +1,5 @@
 # manager
-Building an application to manage employees using Redux and React Native
+An application to manage employees using Redux and React Native
 
 This application is an application used for managing employees at any given company. The idea here is that a manager, or user, creates an acount or logs in,
 views a list of current employees, adds employees if needed and edits current employees. 
