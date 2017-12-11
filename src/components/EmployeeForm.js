@@ -58,7 +58,7 @@ class EmployeeForm extends Component {
 
 
 const mapStateToProps = (state) => {
-    const { name, phone, shift } = state.employeeList
+    const { name, phone, shift } = state.employee
     return { name, phone, shift }
 }
 
